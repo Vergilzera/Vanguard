@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vanguard — Arquivo 12</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: #00ff00;
+            font-family: monospace;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .seguranca {
+            border: 1px solid #00ff00;
+            padding: 30px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        input {
+            background-color: black;
+            color: #00ff00;
+            border: 1px solid #00ff00;
+            padding: 10px;
+            font-family: monospace;
+            outline: none;
+        }
+
+        button {
+            background-color: black;
+            color: #00ff00;
+            border: 1px solid #00ff00;
+            padding: 10px;
+            margin: 10px;
+            font-family: monospace;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #00ff00;
+            color: black;
+       
+              }
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="seguranca">
+
+        <h1>VANGUARD SECURITY</h1>
+
+        <p>====================================</p>
+
+        <h2>🔒 ARQUIVO 12</h2>
+
+        <p>ACESSO RESTRITO</p>
+
+        <p>Este documento requer uma<br>
+        credencial de segurança.</p>
+
+        <p>------------------------------------</p>
+
+        <p>SENHA:</p>
+
+        <input type="password" id="senhaArquivo12">
+
+        <br>
+
+        <button onclick="verificarArquivo12()">
+            ACESSAR
+        </button>
+
+        <p id="mensagem"></p>
+
+        <p>------------------------------------</p>
+
+        <p>STATUS: LOCKED</p>
+
+    
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

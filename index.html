@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vanguard — Login</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: #00ff00;
+            font-family: monospace;
+        }
+
+        input {
+            background-color: black;
+            color: #00ff00;
+            border: 1px solid #00ff00;
+            padding: 10px;
+            font-family: monospace;
+        }
+
+       
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: #00ff00;
+    font-family: monospace;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+body > p,
+body > input,
+body > button {
+    margin-left: auto;
+    margin-right: auto;
+}
+       
+
+button {
+    background-color: #050a05;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    padding: 12px 28px;
+    font-family: monospace;
+    font-size: 16px;
+    text-shadow: 0 0 5px #00ff00;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00ff00;
+    color: black;
+    text-shadow: none;
+}
+
+#mensagem-erro {
+    color: #ff0000;
+    font-family: monospace;
+    font-weight: bold;
+    text-shadow: 0 0 8px #ff0000;
+    margin-top: 15px;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Vanguard</h1>
+
+    <p>TERMINAL DE ACESSO</p>
+
+    <p>Digite a senha:</p>
+
+    <input type="password" id="password">
+
+<button onclick="login()">ACESSAR</button>
+
+<p id="mensagem-erro"></p>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

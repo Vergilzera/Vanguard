@@ -1,0 +1,65 @@
+/* =========================================
+   VANGUARD — EFEITO CRT
+   ========================================= */
+
+body {
+    background-color: #000;
+    color: #00ff00;
+    font-family: monospace;
+    text-shadow: 0 0 5px #00ff00;
+}
+
+/* Linhas fortes de monitor antigo */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+
+    background: repeating-linear-gradient(
+        to bottom,
+        rgba(0, 255, 0, 0.09) 0px,
+        rgba(0, 255, 0, 0.09) 2px,
+        transparent 2px,
+        transparent 5px
+    );
+}
+
+
+/* Bordas escuras mais visíveis */
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 10000;
+
+    background: radial-gradient(
+        ellipse at center,
+        transparent 30%,
+        rgba(0, 0, 0, 0.35) 70%,
+        rgba(0, 0, 0, 0.85) 100%
+    );
+}
+
+
+/* Botão de acesso da VANGUARD */
+button {
+    background-color: #050a05;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    padding: 12px 28px;
+    font-family: monospace;
+    font-size: 16px;
+    text-shadow: 0 0 5px #00ff00;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0, 255, 0, 0.2);
+}
+
+/* Ao passar o mouse */
+button:hover {
+    background-color: #00ff00;
+    color: #000000;
+    text-shadow: none;
+}
